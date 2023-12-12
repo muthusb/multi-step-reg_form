@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="FORM REG.js" defer></script>
+    <title>Multi Step Reg Form</title>
+</head>
+<body>
+    <div class="form">
+        <div class="header">
+            <h2>REGISTRATION FORM</h2>
+        </div>
+        <div class="body">
+
+            <div class="pagination">
+                <div class="number active">1</div>
+                <div class="bar"></div>
+                <div class="number">2</div>
+                <div class="bar"></div>
+                <div class="number">3</div>
+                <div class="bar"></div>
+                <div class="number">4</div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <h4>SECTION I</h4>
+
+                    <div class="grid">
+                        <div class="col">
+                            <label for="Date of Registration">Date of Registration</label>
+                            <input type="date" id="Date of Registration">
+                        </div>
+
+                        <div class="col">
+                            <label for="Date of Admission">Date of Admission</label>
+                            <input type="date" id="Date of Admission">
+                        </div>
+
+                        <div class="col">
+                            <label for="Client's Date of Birth">Client's Date of Birth</label>
+                            <input type="date" id="Client's Date of Birth">
+                        </div>
+
+                        <div class="col">
+                            <label for="Client's Photo ID Type">Client's Photo ID Type(Aadhar/EPIC/DL)</label>
+                            <input type="text" id="Client's Photo ID Type">
+                        </div>
+
+                        <div class="col">
+                            <label for="Client's Photo ID Number">Client's Photo ID Number</label>
+                            <input type="text" id="Client's Photo ID Number">
+                        </div>
+
+                        <div class="col">
+                            <label for="Client's Gender">Client's Gender</label>
+                            <select>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                     <br>
+
+                    <div class="step">
+                        <h4>1.1 Client's Contact Information</h4>
+                    
+                        <div class="grid">
+                            <div class="col">
+
+                                <div class="col">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id="fullname">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="midname">Middle Name</label>
+                                    <input type="text" id="midname">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="lstname">Last Name</label>
+                                    <input type="text" id="lstname">
+                                </div>
+                        
+                                <div class="col">
+                                  <label for="Address">Address</label>
+                                  <textarea id="text" name="Address" rows="1" cols="30"></textarea>
+                                </div>
+    
+                                <div class="col">
+                                    <label for="City">City</label>
+                                    <input type="text" id="City">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="State">State</label>
+                                    <input type="text" id="State">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="PIN">PIN</label>
+                                    <input type="number" id="PIN">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="Mobile">Mobile</label>
+                                    <input type="number" id="Mobile">
+                                </div>
+
+                                <div class="col">
+                                    <label for="Alternate Mobile">Alternate Mobile</label>
+                                    <input type="number" id="Alternate Mobile">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="Email">Email</label>
+                                    <input type="email" id="Email">
+                                </div>
+    
+                                <div class="col">
+                                    <label for="Are contact details as per ID">Are contact details as per ID?</label>
+                                    <select>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="step">
+                    <h4>SECTION II</h4>
+                    <h4>2.1 Current Employment Status</h4>
+                    <div class="grid">
+                        <div class="col">
+                            <div class="dropdown">
+                                <label for="Employment Status">Current Employment Status</label>
+                                <select name="Employment Status" id="Employment Status">
+                                      <option value="Employed">Employed</option>
+                                      <option value="Unemployed">Unemployed</option>
+                                      <option value="VRS">VRS</option>
+                                      <option value="Retired">Retired</option>
+                                      <option value="Employed but under suspension">Employed but under suspension</option>
+                                      <option value="Employed but on leave">Employed but on leave</option>
+                                      <option value="Part time work only">Part time work only</option>
+                                      <option value="Multiple Jobs">Multiple Jobs</option>
+                                      <option value="Others">Others</option>
+                                </select>
+                                
+                            <p>Notes:</p>
+                            <textarea id="Note1" name="Note1" rows="1" cols="30"></textarea>
+
+                            </div>
+                            
+                        <div class="step">
+                                <h4>2.2 Area of Work/Occupation</h4>
+                            <div class="dropdown">
+                                <label for="Area of Work/Occupation ">Area of Work/Occupation</label>
+                                <select name="Area of Work/Occupation " id="Area of Work/Occupation ">
+                                      <option value="Government Service">Government Service</option>
+                                      <option value="Private Service">Private Service</option>
+                                      <option value="Self Employed ">Self Employed </option>
+                                      <option value="Professional (Doctor, CA, etc.)">Professional (Doctor, CA, etc.)</option>
+                                      <option value="Daily Wage Worker">Daily Wage Worker</option>
+                                      <option value="Contractual Worker">Contractual Worker</option>
+                                      <option value="Homemaker">Homemaker</option>
+                                      <option value="Student">Student</option>
+                                      <option value="Never worked">Never worked</option>
+                                      <option value="Landlord/Rental Income only">Landlord/Rental Income only</option>
+                                      <option value="Seasonal worker">Seasonal worker</option>
+                                </select>
+                            <p>Notes:</p>
+                            <textarea id="Note2" name="Note2" rows="1" cols="30"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                                <h4>2.3 Income</h4>
+                            <div class="grid">
+                                <div class="col">
+                                    <label for="primary work">Income from primary work (PER MONTH)</label>
+                                    <input type="number" id="primary work">
+                                </div>
+        
+                                <div class="col">
+                                    <label for="AdmissionIncome">Date of AdmissionIncome from other sources (PER MONTH)</label>
+                                    <input type="number" id="AdmissionIncome">
+                                </div>
+        
+                                <div class="col">
+                                    <label for="rental investments">Income from rental/investments (PER MONTH)</label>
+                                    <input type="number" id="rental investments">
+                                </div>
+        
+                                <div class="col">
+                                    <label for="Other income">Other Income</label>
+                                    <input type="number" id="Other income">
+                                </div>
+        
+                                <div class="col">
+                                    <label for="living together">Family (living together) income (PER MONTH)</label>
+                                    <input type="number" id="living together">
+                                </div>
+
+                                <div class="col">
+                                    <label for="Total MONTHLY income">Total MONTHLY income</label>
+                                    <input type="number" id="Total MONTHLY income">
+                                </div>
+                                
+
+                    <p>In case of self-employed/seasonal workers, use average income figures and mention details in notes</p>
+
+
+                    <div class="col">
+                        <label for="Notes">Notes:</label>
+                        <textarea id="Note3" name="Note3" rows="1" cols="50"></textarea>
+                    </div>
+
+                    
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h4>Secure Your Account</h4>
+                    <p>jnklmk nnklm kmm kllk</p>
+
+                    <div class="grid">
+                        <div class="col">
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                        </div>
+
+                        <div class="col">
+                            <label for="retype-password">Retype Password</label>
+                            <input type="password" id="retype-password">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="confirmation">
+                        <h2>Create my Account</h2>
+                        <p>vug jhbhj kjbkj kjbkjmn</p>
+                        <div>
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="prev" disabled>Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+</body>
+</html>
